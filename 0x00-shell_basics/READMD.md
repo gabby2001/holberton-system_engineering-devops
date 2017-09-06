@@ -1,1 +1,2 @@
-This script is to show current location.
+These are my SSH scripts.
+
