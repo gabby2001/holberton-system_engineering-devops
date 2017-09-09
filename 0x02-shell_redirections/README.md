@@ -1,1 +1,1 @@
-This are I/O related SSH scripts.
+These are I/O related SSH scripts.
