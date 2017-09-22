@@ -1,1 +1,1 @@
-This is DevOps project folder.
+System engineering devops projects

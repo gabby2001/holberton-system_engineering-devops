@@ -1,2 +1,1 @@
-These are my SSH scripts.
-
+SSH script exercises

@@ -1,1 +1,1 @@
-These are SSH permission related scripts. 
+SSH permission script exercises 
