@@ -1,1 +1,1 @@
-## SSH Basci Scripts
+## SSH Basic Scripts
