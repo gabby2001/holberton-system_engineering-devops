@@ -17,4 +17,3 @@ do
 		echo "$i"
 	fi
 done 
-export i
