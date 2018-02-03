@@ -3,10 +3,14 @@
 
 h=0
 m=60
-while [ $h -le 13 ] && [ $m -le 60 ]
+while [ $h -le 13 ]
 do
 	if [ $m == 60 ]
 	then
+		if [ $h == 13 ]
+		then
+			break
+		fi
 		echo "Hour: $h"
 		let h=h+1
 		let m=0
