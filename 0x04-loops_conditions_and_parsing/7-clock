@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+h=0
+m=60
+while [ $h -le 13 ] && [ $m -le 60 ]
+do
+	if [ $m == 60 ]
+	then
+		echo "Hour: $h"
+		let h=h+1
+		let m=0
+	else
+		echo "$m"
+	fi
+	let m=m+1
+done
