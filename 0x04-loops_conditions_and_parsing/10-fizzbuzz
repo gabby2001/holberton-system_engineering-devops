@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# The script prints FizzBuzz
 
 i=1
 for i in {1..100}

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# The script check if file exists and if it's empty and a regular file
 
 FILE="holbertonschool"
 if [ -e $FILE ]
