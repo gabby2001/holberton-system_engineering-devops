@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# display IPv4 IPs
+
+ip addr | grep -w inet | cut -d" " -f6 | cut -d/ -f1
