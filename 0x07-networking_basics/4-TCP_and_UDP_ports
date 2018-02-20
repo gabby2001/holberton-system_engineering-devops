@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# dispaly listening socket with PID and program name
+
+netstat -l -p
