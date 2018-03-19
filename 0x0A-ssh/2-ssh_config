@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# configure client file without typing passord
+Host *
+	IdentityFile ~/.ssh/holberton
+	PasswordAuthentication no
