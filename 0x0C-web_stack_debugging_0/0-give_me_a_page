@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A script installs Apache and return a string
+service apache2 start
