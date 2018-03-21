@@ -4,4 +4,8 @@ apt-get update
 apt-get install Nginx
 echo "Holberton School" > /usr/share/nginx/html/index.html
 sed -i "37i\n\tlocation /redirect_me {\n\t\treturn 301 https://google.com;\n\t}\n" /etc/nginx/sites-enabled/default
+echo "Ceci n'est pas une page" >> /usr/share/nginx/html/404.html
+change="#error_page 404"
+new="error_page 404"
+sed -i "s/$change/$new/" /etc/nginx/sites-enabled/default
 service nginx restart

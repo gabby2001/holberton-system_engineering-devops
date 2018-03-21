@@ -2,4 +2,5 @@
 #install ngix server
 apt-get update
 apt-get install Nginx
-echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
+echo "Holberton School" > /usr/share/nginx/html/index.html
+service ngine restart
