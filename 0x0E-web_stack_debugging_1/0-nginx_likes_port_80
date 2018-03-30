@@ -1,4 +1,4 @@
-#!/usr/bin/evn bash
+#!/usr/bin/env bash
 # Fix issue on Ubuntu server with Nginx
 sudo apt-get install curl -y
 sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
