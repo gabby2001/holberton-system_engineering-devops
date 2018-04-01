@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Fix issue on Ubuntu server with Nginx
-sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
-service nginx start
-service nginx stop
