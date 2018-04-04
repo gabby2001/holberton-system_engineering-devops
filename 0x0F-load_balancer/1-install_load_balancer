@@ -8,3 +8,4 @@ sudo apt-get install haproxy=1.8\* -y
 sudo sed -i "$ a\\\nENABLED=1" /etc/default/haproxy
 sudo sed -i "$ a\\\nfrontend haproxynode\n \tbind *:80\n \tmode http\n \tdefault_backend backendnodes\n" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\backend backendnodes\n \tbalance roundrobin\n \toption forwardfor\n \thttp-request set-header X-Forwarded-Port %[dst_port]\n \thttp-request add-header X-Forwarded-Proto https if { ssl_fc }\n \toption httpchk HEAD / HTTP/1.1\\\r\\\nHost:localhost\n \tserver 263-web-01 34.207.245.172:80 check\n \tserver 263-web-02 18.232.152.253:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
