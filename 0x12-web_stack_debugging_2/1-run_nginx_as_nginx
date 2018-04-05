@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Running server as user nginx and listen to port 80
+sed -i "5i\ user nginx;\n" /etc/nginx/nginx.conf
+sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+kill 787
+chown -R nginx /var/log/nginx  
+chown -R nginx /var/run/nginx.pid
+service nginx restart
