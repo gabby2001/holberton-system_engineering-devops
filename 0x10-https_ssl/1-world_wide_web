@@ -2,10 +2,8 @@
 # A script to display subdomain information
 if [ "$2" ]
 then
-	subdomain="$2"
-	dig "$2"."$1" | grep -A1 'ANSWER SECTION' | awk sub="$subdomain" '{printf "The subdomain %s is a %s record and points to %s\n", sub, $4, $5}'
-elif [ "$1" ]
-then
+	dig "$2.$1" | grep -A1 'ANSWER SECTION' |  awk -v sub_="$2" '{printf "The subdomain %s is a %s record and points to %s\n", sub_, $4, $5}'
+else
 	dig www."$1" | grep -A1 'ANSWER SECTION' | awk '{printf "The subdomain www is a %s record and points to %s\n", $4, $5}'
 	dig lb-01."$1" | grep -A1 'ANSWER SECTION' | awk '{printf "The subdomain lb-01 is a %s record and points to %s\n", $4, $5}'
 	dig web-01."$1" | grep -A1 'ANSWER SECTION' | awk '{printf "The subdomain web-01 is a %s record and points to %s\n", $4, $5}'
