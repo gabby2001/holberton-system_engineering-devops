@@ -1,6 +1,6 @@
 ## System Engineering DevOps Projects
   
-This project consists of the DevOp track training at Holberton School. The topics covered in this track include:  
+This folder consists of the DevOp projects at Holberton School. The topics covered in this track include:  
 * Shell & Bash scripting  
 * Regular expression
 * Networking basics
