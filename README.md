@@ -5,5 +5,5 @@ This folder consists of the DevOp projects at Holberton School. The topics cover
 * Regular expression
 * Networking basics
 * Web infrastructure design
-* Web server, load balancer, SSL, and Firewall configuration
-* Configuration management with Puppet
+* Nginx web server, load balancer, SSL, and Firewall configuration
+* Puppet configuration management
