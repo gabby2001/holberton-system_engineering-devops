@@ -3,6 +3,7 @@
 sed -i "5i\ user nginx;\n" /etc/nginx/nginx.conf
 sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 pkill apache2
-chown -R nginx:nginx /var/log/nginx  
-chown -R nginx:nginx /var/run/nginx.pid
+chown nginx:nginx /etc/nginx/nginx/conf
+chown nginx:nginx /var/log/nginx  
+chown nginx:nginx /var/run/nginx.pid
 sudo -u nginx service nginx restart
