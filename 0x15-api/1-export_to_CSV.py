@@ -18,12 +18,13 @@ def to_csv(id):
     tasks = []
     for item in r.json():
         if int(id) == item.get('userId'):
-            tasks.append({'USER_ID': id, 'USERNAME': name,
+            tasks.append({'USER_ID': int(id), 'USERNAME': name,
                          'TASK_COMPLETED_STATUS': item.get('completed'),
                          'TASK_TITLE': item.get('title')})
 
     # write to csvfile
-    with open("USER_ID.csv", 'w', newline='') as csvfile:
+    filename = id + '.csv'
+    with open(filename, 'w', newline='') as csvfile:
         f = csv.writer(csvfile)
         for elem in tasks:
             f.writerow([elem['USER_ID'], elem['USERNAME'],
