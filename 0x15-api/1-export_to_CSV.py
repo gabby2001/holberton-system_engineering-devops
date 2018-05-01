@@ -26,9 +26,9 @@ def to_csv(id):
     with open("USER_ID.csv", 'w', newline='') as csvfile:
         f = csv.writer(csvfile)
         for elem in tasks:
-             f.writerow([elem['USER_ID'], elem['USERNAME'],
+            f.writerow([elem['USER_ID'], elem['USERNAME'],
                         elem['TASK_COMPLETED_STATUS'], elem['TASK_TITLE']])
 
 
 if __name__ == '__main__':
-   to_csv(argv[1])
+    to_csv(argv[1])

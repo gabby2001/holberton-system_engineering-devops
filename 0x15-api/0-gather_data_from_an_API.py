@@ -20,7 +20,7 @@ def todo(id):
     for item in r.json():
         if int(id) == item.get('userId'):
             total += 1
-            if item.get('completed') == True:
+            if item.get('completed') is True:
                 done += 1
                 tasks.append(item.get('title'))
 
@@ -31,4 +31,4 @@ def todo(id):
 
 
 if __name__ == '__main__':
-   todo(argv[1])
+    todo(argv[1])
