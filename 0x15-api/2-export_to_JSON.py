@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Gather data from API and expoer as json'''
+import json
 import requests
 from sys import argv
-import json
 
 
 def to_json(id):

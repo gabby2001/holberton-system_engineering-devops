@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Gather data from API and expoer as json'''
-import requests
 import json
+import requests
 
 
 def all_to_json():
