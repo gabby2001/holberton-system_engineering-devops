@@ -20,8 +20,8 @@ def all_to_json():
         for item in r.json():
             if id == item.get('userId'):
                 tasks.append({'username': name,
-                             'task': item.get('title'),
-                             'completed': item.get('completed')})
+                              'task': item.get('title'),
+                              'completed': item.get('completed')})
         data[id] = tasks
 
     # write to json file

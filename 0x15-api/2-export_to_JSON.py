@@ -19,13 +19,14 @@ def to_json(id):
     for item in r.json():
         if int(id) == item.get('userId'):
             tasks.append({'task': item.get('title'),
-                         'completed': item.get('completed'),
-                         'username': name})
+                          'completed': item.get('completed'),
+                          'username': name})
 
     # write to json file
     filename = id + '.json'
     data = {int(id): tasks}
     with open(filename, 'w') as f:
+        f.seek(0)
         json.dump(data, f, ensure_ascii=False)
 
 
