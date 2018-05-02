@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Gather data from API and expoer as CSV'''
+import csv
 import requests
 from sys import argv
-import csv
 
 
 def to_csv(id):
