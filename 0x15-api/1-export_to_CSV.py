@@ -19,8 +19,8 @@ def to_csv(id):
     for item in r.json():
         if int(id) == item.get('userId'):
             tasks.append({'USER_ID': int(id), 'USERNAME': name,
-                         'TASK_COMPLETED_STATUS': item.get('completed'),
-                         'TASK_TITLE': item.get('title')})
+                          'TASK_COMPLETED_STATUS': item.get('completed'),
+                          'TASK_TITLE': item.get('title')})
 
     # write to csvfile
     filename = id + '.csv'
