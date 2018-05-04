@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Use Reddit API ot query data'''
+'''Use Reddit API to query data'''
 import requests
 
 
