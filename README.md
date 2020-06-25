@@ -8,7 +8,7 @@ This folder consists of the DevOp projects at Holberton School. The topics cover
 * Nginx web server, load balancer, SSL, and firewall configuration
 * Puppet configuration management
 
-## Lists of Projects
+## List of Projects
 * [0x00-shell_basics](https://github.com/yunjuc/holberton-system_engineering-devops/tree/master/0x00-shell_basics)
 * [0x01-shell_permissions](https://github.com/yunjuc/holberton-system_engineering-devops/tree/master/0x01-shell_permissions)
 * [0x02-shell_redirections](https://github.com/yunjuc/holberton-system_engineering-devops/tree/master/0x02-shell_redirections)
